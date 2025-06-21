@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TaskMate LK</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
+    }
+    body {
+      background: #fff;
+      color: #111827;
+      scroll-behavior: smooth;
+    }
+    header {
+      background: #f97316;
+      padding: 1.5rem 2rem;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    header h1 {
+      font-size: 1.8rem;
+      display: flex;
+      align-items: center;
+    }
+    header img {
+      height: 50px;
+      margin-right: 10px;
+      border-radius: 8px;
+    }
+    nav a {
+      color: white;
+      margin-left: 1rem;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.2s ease;
+    }
+    nav a:hover {
+      color: #ffe5d0;
+    }
+    section.hero {
+      text-align: center;
+      padding: 4rem 2rem;
+      background: linear-gradient(to bottom right, #fff7ed, #ffffff);
+    }
+    section.hero h2 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+      color: #ea580c;
+    }
+    section.hero p {
+      font-size: 1.2rem;
+      margin-bottom: 1rem;
+      color: #444;
+    }
+    .button {
+      background: #f97316;
+      color: white;
+      padding: 1rem 2rem;
+      text-decoration: none;
+      border-radius: 0.5rem;
+      font-weight: 600;
+      transition: background 0.3s, transform 0.2s;
+      display: inline-block;
+    }
+    .button:hover {
+      background: #ea580c;
+      transform: scale(1.05);
+    }
+    .links {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+      padding: 4rem 2rem;
+    }
+    .card {
+      background: white;
+      padding: 2rem;
+      border-radius: 1rem;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.07);
+      text-align: center;
+      border-top: 4px solid #f97316;
+      transition: transform 0.3s;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+    }
+    .card h3 {
+      margin-bottom: 1rem;
+      font-size: 1.5rem;
+      color: #f97316;
+    }
+    .card a {
+      display: inline-block;
+      margin-top: 1rem;
+    }
+    .services {
+      text-align: center;
+      padding: 4rem 2rem;
+      background: #fff;
+    }
+    .services h3 {
+      font-size: 2rem;
+      color: #f97316;
+      margin-bottom: 2rem;
+    }
+    .service-list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2rem;
+    }
+    .service-item {
+      background: #fff7ed;
+      padding: 2rem;
+      border-radius: 1rem;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+      max-width: 300px;
+      transition: transform 0.3s ease;
+    }
+    .service-item:hover {
+      transform: translateY(-10px);
+    }
+    .service-item span {
+      font-size: 2rem;
+      display: block;
+      margin-bottom: 1rem;
+    }
+    .testimonials {
+      padding: 4rem 2rem;
+      background: #fff7ed;
+      text-align: center;
+    }
+    .testimonials h3 {
+      font-size: 2rem;
+      color: #f97316;
+      margin-bottom: 2rem;
+    }
+    .testimonial-list {
+      display: flex;
+      gap: 2rem;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .testimonial {
+      background: white;
+      padding: 1.5rem;
+      border-radius: 1rem;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      max-width: 300px;
+      text-align: left;
+    }
+    .testimonial p {
+      font-style: italic;
+      margin-bottom: 1rem;
+    }
+    .testimonial span {
+      font-weight: bold;
+      color: #f97316;
+    }
+    .stars {
+      color: gold;
+      margin-bottom: 0.5rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1><img src="Taskmate logo.jpg" alt="Logo" /> TaskMate</h1>
+    <nav>
+      <a href="#book">Book a Task</a>
+      <a href="#taskmate">Become a TaskMater</a>
+      <a href="#refer">Referral Program</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Sri Lanka's First On-Demand Task Assistance Platform</h2>
+    <p><strong>Need something done but don’t have the time? That’s where we come in!</strong><br>
+    <strong>TaskMate connects you with reliable helpers for deliveries, cleaning, errands, hospital help, and more right here in Colombo.</strong><br>
+    <strong>Whether it’s a one-time task or everyday support, just book it and we’ll handle the rest.</strong><br>
+    <strong>You rest, we do the rest.</strong></p>
+  </section>
+
+  <section class="links">
+    <div class="card" id="book">
+      <h3>Book a Task</h3>
+      <p>Need help? Get it done fast with TaskMate.</p>
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSeFDFnVmRkquRJVbWGjwzVnzzxXSBsZnkx98BZDUqFWxkucGg/viewform" class="button" target="_blank">Book Now</a>
+    </div>
+    <div class="card" id="taskmate">
+      <h3>Become a TaskMater</h3>
+      <p>Earn money by helping others.</p>
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSdq0ZdRE4DrVf9vRLwJ8eY6DVkDu4c3CCqt5iTKnahZqj83tQ/viewform" class="button" target="_blank">Join Us</a>
+    </div>
+    <div class="card" id="refer">
+      <h3>Referral Program</h3>
+      <p>Refer and earn when your friend completes their first task!</p>
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLScc59zXTRK-LhNir8JqB0StsC70dbatLfa_fqhDafTJi85iuA/viewform" class="button" target="_blank">Start Referring</a>
+    </div>
+  </section>
+
+  <section class="services">
+    <h3>What We Do</h3>
+    <div class="service-list">
+      <div class="service-item"><span>🛵</span>Delivery / Pickup</div>
+      <div class="service-item"><span>🏥</span>Hospital Companion Help</div>
+      <div class="service-item"><span>🧹</span>House Cleaning</div>
+      <div class="service-item"><span>🍳</span>Temporary Cooks</div>
+      <div class="service-item"><span>👵</span>Elderly Care</div>
+      <div class="service-item"><span>🧍‍♂️</span>Queue Standing</div>
+      <div class="service-item"><span>🧰</span>Odd Jobs & More</div>
+    </div>
+  </section>
+
+  <section class="testimonials">
+    <h3>What Our Customers Say</h3>
+    <div class="testimonial-list">
+      <div class="testimonial">
+        <div class="stars">★★★★★</div>
+        <p>TaskMate helped me with a last-minute delivery. Super efficient and friendly!</p>
+        <span>- Anjali, Colombo</span>
+      </div>
+      <div class="testimonial">
+        <div class="stars">★★★★★</div>
+        <p>I booked a companion for my father’s hospital visit. Excellent service and caring staff.</p>
+        <span>- Ruwan, Nugegoda</span>
+      </div>
+      <div class="testimonial">
+        <div class="stars">★★★★☆</div>
+        <p>The cleaner arrived on time and did a great job. Highly recommend TaskMate!</p>
+        <span>- Shanika, Dehiwala</span>
+      </div>
+    </div>
+  </section>
+
+  <footer id="contact" style="text-align: center; padding: 2rem; background: #f97316; color: white;">
+    <p>Contact us: <strong>075 611 9087</strong></p>
+    <p>
+      <a href="https://wa.me/message/IZB4WMCFUHBRL1" target="_blank" style="color: white;">WhatsApp</a> |
+      <a href="https://www.instagram.com/taskmate_lk" target="_blank" style="color: white;">Instagram</a>
+    </p>
+    <p style="margin-top: 1rem;">&copy; 2025 TaskMate. All rights reserved.</p>
+  </footer>
+</body>
+</html>
